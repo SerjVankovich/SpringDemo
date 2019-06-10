@@ -4,9 +4,9 @@ import javax.persistence.*
 
 @Entity
 class Car (
-        val company: String,
-        val model: String,
-        val year: Int,
+        var company: String,
+        var model: String,
+        var year: Int,
 
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
